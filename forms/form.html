@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesform.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jqform.js"></script>
+</head>
+<header>
+    <div class="nav-buttons">
+        <button onclick="location.href='../index.html'">Home</button>
+        <button onclick="location.href='form.html'">Form</button>
+    </div>
+    <h1 style="text-align: center; margin-bottom: 50px;"> <!-- increase margin-bottom to 40px -->
+        <span class="green">Martincz7578</span>/<span class="magenta">Martincz75</span>
+    </h1>
+    <div class="menu-icon" onclick="toggleTab()" style="position: absolute; right: 20px;">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</header>
+<div id="tab" class="tab">
+    <a href="https://github.com/Martincz7578" target="_blank">GitHub</a>
+    <a href="https://www.twitch.tv/martincz75" target="_blank">Twitch</a>
+    <a href="https://www.youtube.com/@Martincz75" target="_blank">YouTube</a>
+    <div class="settings">
+        <label for="mode">Choose Mode:</label>
+        <select id="mode" onchange="changeMode(this.value)">
+            <option value="bright">Bright Mode</option>
+            <option value="dark">Dark Mode</option>
+            <option value="ultra-white">Ultra White Mode</option>
+            <option value="ultra-dark">Ultra Dark Mode</option>
+            <option value="high-contrast">High Contrast Mode</option>
+        </select>
+    </div>
+</div>
+<body>
+    <form>
+        <h4>1. Which programming language is my favorite?</h4>
+        <div>
+            <input type="radio" name="favorite_language" id="q1">
+            <label for="q1">A) C++</label>
+        </div>
+        <div>
+            <input type="radio" name="favorite_language" id="q2">
+            <label for="q2">B) C</label>
+        </div>
+        <div>
+            <input type="radio" name="favorite_language" id="q3">
+            <label for="q3">C) Python</label>
+        </div>
+        <h4>2. Which programming languages </h4>
+    </form>
+    <footer>
+        <p>
+            <a href="https://github.com/Martincz7578" target="_blank">GitHub</a>
+            <a href="https://www.twitch.tv/martincz75" target="_blank">Twitch</a>
+            <a href="https://www.youtube.com/@Martincz75" target="_blank">YouTube</a>
+        </p>
+    </footer>
+</body>
+</html>

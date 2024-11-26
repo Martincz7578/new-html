@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-buttons">
+            <button onclick="location.href='index.html'">Home</button>
+            <button onclick="location.href='forms/form.html'">Form</button>
+        </div>
+        <h1 style="text-align: center; margin-bottom: 50px;"> <!-- increase margin-bottom to 40px -->
+            <span class="green">Martincz7578</span>/<span class="magenta">Martincz75</span>
+        </h1>
+        <div class="menu-icon" onclick="toggleTab()" style="position: absolute; right: 20px;">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <div id="tab" class="tab">
+        <a href="https://github.com/Martincz7578" target="_blank">GitHub</a>
+        <a href="https://www.twitch.tv/martincz75" target="_blank">Twitch</a>
+        <a href="https://www.youtube.com/@Martincz75" target="_blank">YouTube</a>
+        <div class="settings">
+            <label for="mode">Choose Mode:</label>
+            <select id="mode" onchange="changeMode(this.value)">
+                <option value="bright">Bright Mode</option>
+                <option value="dark">Dark Mode</option>
+                <option value="ultra-white">Ultra White Mode</option>
+                <option value="ultra-dark">Ultra Dark Mode</option>
+                <option value="high-contrast">High Contrast Mode</option>
+            </select>
+        </div>
+    </div>
+    <div style="padding-left: 10px;">
+        <h1>Welcome to my website! </h1>
+
+        <p>This website will tell you everything you need to know me!</p>
+
+        <p>My name is Martin and I am a software developer.<br>
+        I'm from Czech Republic.<br>
+        I am a full-time student and part-time streamer on Twitch and YouTube.<br>
+        I really like physics, chemistry and everything about technology and science.<br>
+        I'm looking forward to collaborating on any game project once I'll actually have time for it.</p>
+
+        <h2>My goals</h2>
+    </div>
+    <div class="background-images"></div>
+</body>
+<footer>
+    <p>
+        <a href="https://github.com/Martincz7578" target="_blank">GitHub</a> |
+        <a href="https://www.twitch.tv/martincz75" target="_blank">Twitch</a> |
+        <a href="https://www.youtube.com/@Martincz75" target="_blank">YouTube</a>
+    </p>
+</footer>
+</html>
